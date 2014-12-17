@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">\@ParLai</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="unit_PAR">umol/m2/sec</string>
+    <string name="bt_calc">Calc LAI</string>
+    <string name="a">#B1DDA1</string>
+    <string name="b">#668D3C</string>
+</resources>

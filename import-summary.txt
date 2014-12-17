@@ -1,0 +1,99 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From IOIOLibAccessory:
+* IOIOLibAccessory.iml
+* build.xml
+* proguard.cfg
+From IOIOLibAndroid:
+* android.iml
+* ant.properties
+* build.xml
+* proguard.cfg
+From IOIOLibAndroidDevice:
+* IOIOLibAndroidDevice.iml
+* build.xml
+* proguard.cfg
+From IOIOLibBT:
+* IOIOLibBT.iml
+* build.xml
+* proguard.cfg
+From nParLai:
+* ic_launcher-web.png
+* nParLai.iml
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In IOIOLibAndroid:
+* Z:\Mink\Desktop\Source\IOIOLib\src\ => iOIOLibAndroid\src\main\java\
+* AndroidManifest.xml => iOIOLibAndroid\src\main\AndroidManifest.xml
+* assets\ => iOIOLibAndroid\src\main\assets\
+* res\ => iOIOLibAndroid\src\main\res\
+* src\ => iOIOLibAndroid\src\main\java\
+In IOIOLibAccessory:
+* AndroidManifest.xml => iOIOLibAccessory\src\main\AndroidManifest.xml
+* assets\ => iOIOLibAccessory\src\main\assets\
+* res\ => iOIOLibAccessory\src\main\res\
+* src\ => iOIOLibAccessory\src\main\java\
+In IOIOLibAndroidDevice:
+* AndroidManifest.xml => iOIOLibAndroidDevice\src\main\AndroidManifest.xml
+* assets\ => iOIOLibAndroidDevice\src\main\assets\
+* res\ => iOIOLibAndroidDevice\src\main\res\
+* src\ => iOIOLibAndroidDevice\src\main\java\
+In IOIOLibBT:
+* AndroidManifest.xml => iOIOLibBT\src\main\AndroidManifest.xml
+* assets\ => iOIOLibBT\src\main\assets\
+* res\ => iOIOLibBT\src\main\res\
+* src\ => iOIOLibBT\src\main\java\
+In nParLai:
+* AndroidManifest.xml => nParLai\src\main\AndroidManifest.xml
+* assets\ => nParLai\src\main\assets\
+* lint.xml => nParLai\lint.xml
+* res\ => nParLai\src\main\res\
+* src\ => nParLai\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

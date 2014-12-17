@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="th.or.nectec.naparlai.MainActivity"
+    android:background="#88BF68"
+    >
+
+    <Button
+        android:id="@+id/buttonCalcLAI"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onButtonCalcClick"
+        android:text="@string/bt_calc" />
+
+    <TextView
+        android:id="@+id/textViewPAR"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewLabelPAR"
+        android:layout_marginLeft="20dp"
+        android:gravity="right"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/TextViewLabelLAI"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textViewLabelPARunit"
+        android:layout_below="@+id/textViewPAR"
+        android:layout_marginLeft="20dp"
+        android:text="   LAI"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/TextViewLAI"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewLabelLAI"
+        android:layout_alignRight="@+id/textViewPAR"
+        android:layout_below="@+id/TextViewLabelLAI"
+        android:gravity="right"
+        android:text="- -  - -"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/textViewLabelPAR"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textViewPAR"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textViewLabelPARunit"
+        android:layout_marginTop="34dp"
+        android:text="   PAR"
+        android:textColorLink="#B1DDA1"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/TextViewLabelLAIunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewLAI"
+        android:layout_alignBottom="@+id/TextViewLAI"
+        android:layout_alignLeft="@+id/textViewLabelPARunit"
+        android:text="m2/m2"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textViewLabelPARunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewPAR"
+        android:layout_alignBottom="@+id/textViewPAR"
+        android:layout_alignLeft="@+id/buttonCalcLAI"
+        android:text="@string/unit_PAR"
+        android:textSize="15dp" />
+
+</RelativeLayout>
